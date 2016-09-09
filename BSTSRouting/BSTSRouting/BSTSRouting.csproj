@@ -42,7 +42,22 @@
     <Reference Include="GMap.NET.WindowsForms">
       <HintPath>libs\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.6.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.6.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.6.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.6.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>libs\nunit.framework.dll</HintPath>
     </Reference>
@@ -72,13 +87,22 @@
   <ItemGroup>
     <Compile Include="connection\DBConnect.cs" />
     <Compile Include="controller\AdjacencyList.cs" />
+    <Compile Include="controller\AStar.cs" />
     <Compile Include="controller\EdgeToNeighbor.cs" />
+    <Compile Include="controller\Graph.cs" />
+    <Compile Include="controller\Haversine.cs" />
+    <Compile Include="controller\IHasNeighbours.cs" />
     <Compile Include="controller\Node.cs" />
     <Compile Include="controller\NodeList.cs" />
+    <Compile Include="controller\Path.cs" />
+    <Compile Include="controller\PriorityQueue.cs" />
+    <Compile Include="model\EdgeModel.cs" />
     <Compile Include="model\PointLocation.cs" />
+    <Compile Include="model\NodeModel.cs" />
     <Compile Include="model\WayNodeModel.cs" />
     <Compile Include="utils\MathUtils.cs" />
     <Compile Include="utils\MapUtils.cs" />
+    <Compile Include="utils\TimeUtils.cs" />
     <Compile Include="view\RoutingForm.cs">
       <SubType>Form</SubType>
     </Compile>
